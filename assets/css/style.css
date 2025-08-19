@@ -246,7 +246,7 @@ display: none;
   /* margin: 0 10px; */
 }
 .bannWT_owwwll  .owl-nav button.owl-next {
-  background-image:url(../images/bannArr_2.png) ;
+  background-image:url(../images/bannArr_2.png) !important ;
 }
 .bannWT_owwwll  .owl-nav button.owl-next:hover{
      background-image:url(../images/bannArr_2.png) !important;
