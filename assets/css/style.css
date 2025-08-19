@@ -144,6 +144,7 @@ a{
 }
 .bannMain_sec_1{
 background: url("../images/banbanWat_1.jpeg") !important;
+        background-size: cover !important;
 /*        background-size: 100% 100% !important; */
 }
     
