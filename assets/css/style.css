@@ -1,0 +1,1793 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face{
+    font-family: serifStylee;
+    src: url("../fonts/Simple-Serenity-Serif.ttf");
+}
+
+p, a,span{
+    /* font-family: ; */
+  font-family: "Raleway", sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* Header seciton */
+
+.inChange_inner{
+    z-index: 1000;
+}
+
+.top_divv p{
+    /* font-family: segoe UI; */
+    margin-bottom: 0;
+    color: white;
+}
+
+
+.top_divv a{
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.top_divv p{
+    display: flex;
+    gap: 3%;
+    width: 100%;
+    justify-content: end;
+}
+
+.navBar_mainn{
+    /* background: #202020; */
+}
+.navLogoo img{
+    width: 100%;
+}
+
+.navLogoo{
+    width: 30%;
+    display: block;
+    position: absolute;
+    /* margin: auto; */
+}
+
+.LogoDiv{
+    width: 42%;
+    background: white;
+    position: relative;
+}
+.nav1st_divMain{
+ width: 55%;
+    /* background: #3a3a3a; */
+    position: absolute;
+    right: -9%;
+    border: 0;
+    top: 0;
+    background: url("../images/bannBackFrst.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav1st_divMain ul li a {
+  position: relative; /* needed for ::before positioning */
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none; /* remove default underline */
+}
+
+.nav1st_divMain ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px; /* adjust distance from text */
+  width: 0%;
+  height: 2px;
+  background: white;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.nav1st_divMain ul li a:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.nav1st_divMain ul li a:hover {
+  color: white; /* keeps text color same on hover */
+}
+.nav1st_divMain ul{
+    width: 100%;
+}
+
+#magniNv::before{
+    content: "";
+    border-left: 1px solid white;
+    height: 40px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+#magniNv a{
+    font-size: 22px;
+}
+
+
+
+/* Banner section  */
+
+.bannMain_sec{
+    background: url("../images/tattoWt_bann.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 12%;
+    background-color: #00000046;
+    /* background-color: #001b2433; */
+    background-blend-mode: overlay;
+    overflow: hidden;
+    background-position: center;
+}
+.bannMain_banHead{
+ text-align: center;
+}
+.bannMain_banHead h1{
+    color: white;
+    font-size: 133px;
+    font-weight: 100;
+    margin-bottom: 0;
+     font-family: serifStylee;
+     letter-spacing: 3px;
+}
+.bannMain_banHead p{
+       font-size: 45px;
+    font-weight: bold;
+    color: white;
+    word-spacing: 10px;
+}
+
+.bannMain_banHead a{
+     width: 30%;
+    display: block;
+    margin: auto;
+    border: 1px solid white;
+    padding: 6px;
+    /* border-radius: 10px; */
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: segoe UI;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.bannMain_banHead a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.bannMain_banHead a::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.bannMain_banHead a:hover{
+    color: black;
+}
+.bannMain_banHead a:hover::before{
+   width: 50%;
+}
+.bannMain_banHead a:hover::after{
+   width: 51%;
+}
+
+
+
+
+.bannWT_owwwll  .owl-nav{
+      position: absolute !important;
+    bottom: 90px !important;
+    /* background-color: white; */
+    right: 65px;
+    width: 15%;
+}
+
+.bannWT_owwwll  .owl-nav .owl-next  span{
+display: none;
+}
+.bannWT_owwwll  .owl-nav .owl-prev  span{
+display: none;
+}
+.bannWT_owwwll .owl-nav button.owl-next {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  /* margin: 0 10px; */
+}
+.bannWT_owwwll  .owl-nav button.owl-next {
+  background-image:url(../images/bannArr_2.png) ;
+}
+.bannWT_owwwll  .owl-nav button.owl-next:hover{
+     background-image:url(../images/bannArr_2.png) !important;
+       width: 40px !important;
+  height: 40px !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  border: none !important;
+}
+
+.bannWT_owwwll .owl-nav [class*=owl-]:hover {
+    background: none !important;
+}
+
+
+
+
+
+.animateBan-Lft {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 1s ease;
+}
+
+.owl-item.active .animateBan-Lft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animateBan-Rgt {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 1s ease;
+}
+
+.owl-item.active .animateBan-Rgt {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+ /* 2nd sec  */
+
+ .abt2nd_sec{
+    background: black;
+    padding: 120px 0;
+    overflow: hidden;
+ }
+.abt2nd_2 h2{
+    font-size: 70px;
+    font-family: serifStylee;
+    color: white;
+}
+.abt2nd_2 p{
+    font-size: 20px;
+    color: rgb(233, 233, 233);
+    line-height: 25px;
+}
+
+.abtWtt_btns a{
+    border: 1px solid white;
+    display: block;
+    width: 35%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+        position: relative;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.abtWtt_btns a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.abtWtt_btns a::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.abtWtt_btns a:hover{
+    color: black;
+}
+.abtWtt_btns a:hover::before{
+   width: 50%;
+}
+.abtWtt_btns a:hover::after{
+   width: 51%;
+}
+
+
+.abttImg_2{
+    width: 33%;
+    right: 0;
+    bottom: -10px;
+}
+
+
+
+/* 3rd Sec */
+.weDo_sec{
+       background: url("../images/wedoBann_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.wedo_head h2{
+      font-size: 70px;
+    font-family: serifStylee;
+    color: black;
+}
+.wedo_head p{
+     font-size: 20px;
+}
+
+.srvTyp_txxxtt{
+    background: black;
+    padding: 30px;
+    position: relative;
+    padding-bottom: 30px !important;
+    text-align:center;
+}
+.srvTyp_txxxtt h5{
+    font-size: 27px;
+    color: white;
+}
+.srvTyp_txxxtt p{
+        font-size: 18px;
+        color: #e6e6e6;
+}
+
+.weDoCard_btn{
+        border: 1px solid white;
+    display: block;
+    width: 42%;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    background: #5d3538;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -25px;
+}
+
+    
+
+    .weDooo_owlll .owl-stage{
+    /* padding-bottom: 800px !important; */
+        padding-bottom: 40px;
+    }
+
+
+
+
+
+    /* 4th sec  */
+    .worksWt_sec{
+         background: url("../images/rkkETT_back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* background-color: #00000046; */
+    background-color: #001b2433;
+    background-blend-mode: overlay;
+    overflow: hidden;
+    background-position: center;
+    }
+
+.wrkWt_1_hd h2{
+    font-family: serifStylee;
+    font-size: 70px;
+        color: white;
+    /* font-weight: 700; */
+}
+
+.wrkWt_1_swch .nav-tabs{
+    border: none;
+    justify-content: center;
+    gap: 5%;
+}
+.wrkWt_1_swch .nav-link.active{
+    background: white !important;
+    border-radius: 0;
+    color: #5d3538 !important;
+}
+.wrkWt_1_swch .nav-link{
+    font-size: 20px;
+    background: transparent !important;
+    color: white !important;
+    border: none !important;
+}
+.wrkWt_1_swch{
+    width: 30%;
+}
+
+
+
+.wrkWt_1_swch .nav-link:hover{
+    border: none !important;
+}
+.wrkWtt_imgg span{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.623);
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(240, 240, 240);
+    /* font-weight:00; */
+}
+
+#wrkWtt_imgg_fst{
+    height: 518px;
+    overflow: hidden;
+}
+
+
+/* 5th sec  */
+.testiWt_sec{
+    padding-top: 60px;
+    padding-bottom: 250px;
+    background: url("../images/testiWT_back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.testiWt_sec h2{
+        font-size: 70px;
+    font-family: serifStylee;
+    color: black;
+    text-align: center;
+}
+.testiWt_prof {
+    width: 13%;
+    margin: auto;
+    
+}
+.testiWt_main h5{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.testiWt_main p{
+       font-size: 20px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 25px !important;
+}
+.testiWt_main span{
+    width: 15%;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 20px;
+}
+.testiMach_1{
+  width: 30%;
+    top: 190px;
+    left: 15px;
+    opacity: 0.7;
+}
+.testiMach_2{
+  width: 30%;
+    top: 190px;
+    right: 15px;
+    opacity: 0.7;
+}
+
+.testiWt_sec .owl-stage-outer{
+    padding-bottom: 30px;
+}
+
+
+
+/* FOOETR  */
+
+.jusDsn_WTT{
+    background: url("../images/ftTop_backk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    height: 210px;
+}
+.fottMain_div{
+    padding-top: 100px;
+    padding-bottom: 30px;
+        background: black;
+}
+.ftLogo_imgg{
+    width: 14%;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -115px;
+    left: 50%;
+    transform: translate(-50%, 0);  
+}
+
+.fottMain_div h3{
+     font-size: 70px;
+    font-family: serifStylee;
+    color: #a7a7a7;
+    text-align: center;
+}
+.ftMaion_txt{
+    text-align: center;
+    color: #a7a7a7;
+    font-size: 20px;
+}
+
+.ftMain_menu {
+    padding-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    /* gap: 5%; */
+
+}
+.ftMain_menu li{
+    list-style: none;
+}
+
+.ftMain_menu li a{
+    color: #e7e7e7 ;
+    font-size: 20px;
+     padding: 0 27px;
+    border-left: 1px solid;
+}
+#homeFRbl{
+    border-left: none !important;
+}
+.iconFt{
+    gap: 3%;
+}
+.iconFt i{
+    font-size: 25px;
+     color: #a7a7a7;
+}
+.ftLast_tx{
+     font-size: 20px;
+ color: #a7a7a7;
+    text-align: center;
+}
+
+.ftLast_tx a{
+    font-weight: 800;
+   color: #a7a7a7;
+}
+
+
+/* *************  */
+
+/* CSS */
+.bannSec_tatSec {
+  position: relative;
+  /* background: url('your-image.jpg') center/cover no-repeat; */
+  padding: 60px 0;
+   background: url("../images/tattoWt_bann.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #000000b6; */
+    /* background-color: #001b2433; */
+    background-blend-mode: overlay;
+    /* overflow: hidden; */
+    background-position: center;
+    padding-top: 220px;
+}
+
+/* .bannSec_tatSec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7); 
+  z-index: 1;
+} */
+
+.bannDiv_tat {
+    background: url("../images/bannBackFrst.jpg");
+     background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+   padding: 30px 20px;
+       padding-left: 121px;
+}
+
+.bannDiv_tat_out{
+   position: absolute;
+    /* text-align: center; */
+    z-index: 2;
+    width: 35%;
+    left: 0;
+    /* transform: translate(-50%, 0); */
+    padding: 12px;
+    bottom: -60px;
+    background: #0000006e;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    padding-left: 0;
+}
+
+.bannDiv_tat h1 {
+    margin: 0;
+    font-size: 40px;
+    font-family: serifStylee;
+    font-weight: 600;
+
+}
+
+.bannDiv_tat p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.bannDiv_tat a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bannDiv_tat span {
+  color: #ccc;
+}
+
+
+/* about Inner page  */
+
+/* CSS */
+.abtTat_sec {
+  padding: 60px 0;
+  padding-top:120px;
+     background: url("../images/impTatAbt_pg.jpg");
+     background-repeat: no-repeat;
+    background-size: cover;
+     position: relative;
+}
+.abtTat_img{
+    position: relative;
+    z-index: 2;
+}
+/* .abtTat_img::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    height: 520px;
+    width: 60%;
+    border: 2px solid #5d3538b5;
+    box-sizing: border-box;
+        z-index: -1;
+} */
+.abtTat_img img {
+  width: 100%;
+  /* height: auto; */
+  /* border-radius: 8px; */
+}
+
+.abttat_txtt {
+  /* display: flex; */
+}
+
+.abttat_txtt h2 {
+     font-size: 50px;
+    margin-bottom: 15px;
+    /* font-weight: bold; */
+    font-family: serifStylee;
+}
+
+.abttat_txtt p {
+  /* font-size: 1rem; */
+  /* line-height: 1.6; */
+  color: #555;
+      font-size: 20px;
+}
+
+.abtTat_img_psAbs{
+  position: absolute;
+    width: 17%;
+    top: 0;
+    opacity: 0.4;
+}
+
+
+.abtTat_img_psAbs_2{
+      position: absolute;
+    width: 14%;
+    top: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+/* ***************************************************** */
+
+
+/* CSS */
+.abtCount_sec {
+  background: url('../images/abtttScndBack.jpg') center/cover no-repeat;
+  padding: 60px 0;
+  color: white;
+}
+
+.abtCountDv_1 {
+  background: rgba(0, 0, 0, 0.85); /* black theme with slight transparency */
+  padding: 30px;
+  text-align: center;
+    border: 1px solid gray;
+  /* border-radius: 8px; */
+}
+
+.abtCountDv_1 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
+}
+
+.abtCountDv_1 p {
+    font-size: 40px;
+  /* font-weight: bold; */
+  margin: 0;
+}
+
+.abtCountDv_1 i{
+    font-size: 30px;
+}
+
+
+
+/* **************************** */
+
+
+/* CSS */
+.chosTat_sec {
+  padding: 60px 0;
+    background: url('../images/chsTat_back.jpg') center/cover no-repeat;
+}
+
+.secTatHead h2 {
+    font-size: 70px;
+    font-family: serifStylee;
+    color: black;
+    text-align: center;
+}
+
+.secTatHead p {
+  /* font-size: 1rem; */
+  color: #555;
+  font-size: 20px;
+}
+
+.mnChos_divTat {
+  margin-top: 40px;
+}
+
+.chosCard_tat {
+       background: url("../images/crsChtat_bck.jpg") center / cover no-repeat;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    /* border-radius: 8px; */
+    height: 265px;
+    position: relative;
+    padding-top: 65px;
+}
+
+
+.chosCard_tat h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.chosIc_tatIMG{
+         position: absolute;
+    background: #5d3538;
+    padding: 10px;
+    width: 20%;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 4px solid white;
+}
+
+
+
+
+.abtInTt_btn {
+    border: 1px solid white;
+    display: block;
+    width: 38%;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: white;
+    background: #5d3538;
+         z-index: 2 !important;
+    transition: 0.5s;
+position:relative;
+} 
+.abtInTt_btn::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.abtInTt_btn::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.abtInTt_btn:hover{
+    color: black;
+      border: 1px solid rgb(0, 0, 0);
+}
+.abtInTt_btn:hover::before{
+   width: 50%;
+}
+.abtInTt_btn:hover::after{
+   width: 51%;
+}
+
+
+
+/* ******************************************* */
+
+/* .ServDecIn_sec::before {
+    content: "";
+    position: absolute;
+    top: 0;       
+    left: 0;       
+    width: 50px;    
+    height: 2px;   
+    background-color: #000; 
+} */
+
+.ServDecIn_sec{
+        background: url("../images/whitServIn_backTat.jpg") center / cover no-repeat;
+        background-attachment: fixed    ;
+        padding-top: 100px;
+        padding-bottom: 120px;
+}
+
+.servDec_img{
+    width: 20%;
+    margin: auto;
+}
+
+.servDec_img_1 {
+    width: 15%;
+    position: absolute;
+    top: 320px;
+    left: 20%;
+    opacity: 0.6;
+}
+.servDec_img_2 {
+       width: 15%;
+    position: absolute;
+    top: 320px;
+    right: 20%;
+    transform: rotateY(180deg);
+    opacity: 0.6;
+}
+
+
+
+.servSing_divvv {
+    background: url("../images/blkText_singServtat.jpg") center / cover no-repeat;
+    color: #fff;  
+    padding: 40px;
+    position: relative;
+    margin-top: 100px;
+}
+.servSing_divvv_ext{
+        margin-top: 150px;
+}
+.servSing_divvv h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.servSing_divvv p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.imgServIn_sing {
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.imgServIn_sing img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 8px; */
+}
+
+
+.abtInTt_btn_1{
+    margin-top:20px;
+    width: 30%;
+    position: relative;
+      z-index: 2;
+    transition: 0.5s;
+}
+
+.abtInTt_btn_1::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.abtInTt_btn_1::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.abtInTt_btn_1:hover{
+    color: black;
+}
+.abtInTt_btn_1:hover::before{
+   width: 50%;
+}
+.abtInTt_btn_1:hover::after{
+   width: 51%;
+}
+
+/* ****************************************** */
+.galTab_tat{
+    margin-top: 50px;
+    justify-content: center;
+    gap: 1%;
+    border-bottom: 0;
+}
+.galTab_tat .nav-link {
+ background: url("../images/gttat.jpg") center / cover no-repeat;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.galTab_tat .nav-link.active {
+    background-color: #4e0000; /* active tab color */
+    color: #fff;
+}
+
+.mainTabs_tat {
+    /* background-color: #000; */
+    padding: 20px;
+    border-radius: 0;
+}
+
+.galImg_tab img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.galTab_tat .nav-link{
+    width: 100%;
+}
+.galTab_tat li{
+width: 16%;
+}
+
+ .pp_fxMn_ovrLy {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgb(0 0 0 / 35%);
+    z-index: 2;
+    transition: 0.3s ease;
+    opacity: 0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.galImg_tab{
+    position: relative;
+}
+
+
+  .galImg_tab:hover .pp_fxMn_ovrLy{
+   
+    height: 100%;
+    opacity: 1;
+  }
+ 
+ 
+ 
+ /* **************************** */
+
+/* Contact Section */
+
+
+
+        .contact-section {
+             background: url("../images/whitServIn_backTat.jpg") center / cover no-repeat;
+            background-attachment: fixed;
+            padding: 100px 0;
+            
+        }
+
+        .contact-section .section-title{
+           font-size: 70px;
+           font-family: serifStylee;
+        }
+
+        .contact-section .section-subtitle{
+           font-family: "Raleway", sans-serif;
+        }
+
+        .contact-form {
+               background: url(../images/rkkETT_back.jpg);
+            padding: 50px;
+            border: 2px solid #3d3d3d;
+            background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #00000046; */
+    background-color: #001b2433;
+    background-blend-mode: overlay;
+    overflow: hidden;
+    background-position: center;
+        }
+
+      .contact-form   .form-control {
+               background: #1a1a1a;
+    border: 1px solid #3d3d3d;
+    color: white;
+    padding: 18px 20px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border-radius: 0;
+        }
+
+        .form-control:focus {
+            background: #1a1a1a;
+            border-color: #fff;
+            color: white;
+            box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+        }
+
+        .form-control::placeholder {
+            color: #999;
+        }
+
+        .submit-btn {
+           border: 1px solid #b9b9b9;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 10px;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    background: #5d3538;
+    transition: 0.5s;
+
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 50px rgba(255, 255, 255, 0.7);
+        }
+
+        .contact-info {
+            background: #1a1a1a;
+            /* border-radius: 25px; */
+            padding: 23px;
+            border: 2px solid #3d3d3d;
+        }
+
+        .contact-item {
+            display: flex;
+            /* align-items: center; */
+            margin-bottom: 30px;
+            row-gap: 10px;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #8a8989, #803834);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+                color: white;
+        }
+
+        .contact-details h4 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .contact-details p{
+            color: #c2c2c2;
+        }
+        
+        
+        
+        
+        
+        
+.servWtt_sec  .wedo_head h2 {
+    font-size: 60px;
+    font-family: serifStylee;
+    color: black;
+        text-align: left;
+}
+
+.servWtt_sec  .wedo_head p {
+    font-size: 20px;
+    text-align: left;
+}   
+
+.servRowwWt {
+    background: url(../images/servSng_back.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000a1;
+    /* background-color: #001b2433; */
+    background-blend-mode: overlay;
+    /* height: 200px; */
+    flex-direction: column !important;
+}   
+
+
+
+/* 3rd Sec */
+.weDo_sec_2{
+       background: url("../images/metallic-straws-background-with-leaves.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    min-height: 470px;
+}
+
+.wedo_head h2{
+      font-size: 65px;
+    font-family: serifStylee;
+    color: black;
+}
+.wedo_head p{
+     font-size: 20px;
+}
+
+.srvTyp_txxxtt{
+    background: black;
+    padding: 30px;
+    position: relative;
+    padding-bottom: 30px !important;
+}
+.srvTyp_txxxtt h5{
+    font-size: 27px;
+    color: white;
+}
+.srvTyp_txxxtt p{
+        font-size: 18px;
+        color: #e6e6e6;
+}
+
+.srvTyp_txxxtt i{
+    font-size: 47px;
+    color: #ffff;
+}
+
+/* ========= Process ========== */
+ /* Process Section */
+        .process-section {
+            background: url("../images/blue-smooth-wall-textured-background.jpg");
+            background-attachment: fixed;
+            padding: 100px 0;
+            color: white;
+        }
+
+        .process-section .section-title{
+           font-size: 70px;
+           font-family: serifStylee;
+        }
+        
+        .process-section .section-subtitle{
+           font-family: "Raleway", sans-serif;
+        }
+
+        .process-timeline {
+            position: relative;
+            margin-top: 60px;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, #cccccc, #888888);
+            transform: translateX(-50%);
+        }
+
+        .process-step {
+            position: relative;
+            margin-bottom: 80px;
+        }
+
+        .process-step:nth-child(even) .process-content {
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .process-content {
+            background: #2d2d2d;
+            padding: 40px;
+            /* border-radius: 20px; */
+            width: 45%;
+            position: relative;
+            border: 2px solid #3d3d3d;
+            transition: all 0.3s ease;
+        }
+
+        .process-content:hover {
+            border-color: #fff;
+            transform: scale(1.02);
+        }
+
+        .process-number {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: black;
+            z-index: 2;
+        }
+
+        .process-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+            font-family: serifStylee;
+        }
+
+        .process-description {
+            opacity: 0.9;
+            line-height: 1.7;
+            font-family: "Raleway", sans-serif;
+        }
+
+
+.weDoCard_btn{
+    border: 1px solid white;
+    display: block;
+    width: 42%;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    background: #5d3538;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -25px;
+    transition:0.5s;
+    
+}
+
+
+.weDoCard_btn:hover{
+    background:white;
+    color:black;
+}
+    
+
+    .weDooo_owlll .owl-stage{
+    /* padding-bottom: 800px !important; */
+        padding-bottom: 40px;
+    }
+
+
+
+/* ============ Styles section ==================== */
+ /* Styles Section */
+        .styles-section {
+            background: #1a1a1a;
+            padding: 75px 0;
+            color: white;
+            position: relative;
+        }
+
+        .styles-section .section-title{
+           font-size: 70px;
+           font-family: serifStylee;
+        }
+
+        .styles-section .section-subtitle{
+           font-family: "Raleway", sans-serif;
+        }
+
+
+        .styles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .style-card {
+            background: #2d2d2d;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .style-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(255, 255, 255, 0.7);
+        }
+
+        .style-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .style-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,107,107,0.8), rgba(238,90,82,0.8));
+            opacity: 0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .style-card:hover .style-overlay {
+            opacity: 1;
+        }
+
+        .style-overlay-text {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .style-content {
+            padding: 30px;
+        }
+
+        .style-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+            font-family: serifStylee;
+        }
+
+        .style-description {
+            opacity: 0.9;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .style-price {
+            background: linear-gradient(45deg, #a8a8a8, #6b6b6b);
+            color: white;
+            padding: 8px 20px;
+            /* border-radius: 20px; */
+            font-weight: bold;
+            display: inline-block;
+        }
+        .owl-carousel .owl-nav {
+            margin-top: 0;
+            position: absolute;
+            top: 50%;
+            width: 111%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0px;
+            margin: 0 -60px;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel .owl-nav button.owl-next {
+            font-size: 40px; /* Increase font size to make them larger */
+            color: #fff; /* Set a bright white color (or any color you prefer) */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            border-radius: 50%; /* Make them circular */
+            width: 60px; /* Set a fixed width */
+            height: 60px; /* Set a fixed height */
+            display: flex; /* Use flexbox to center the content (arrow/icon) */
+            align-items: center; /* Vertically center the content */
+            justify-content: center; /* Horizontally center the content */
+            cursor: pointer; /* Indicate that they are clickable */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+            pointer-events: auto; /* Re-enable clicks on the buttons themselves */
+            border: none; /* Remove default button border */
+            outline: none; /* Remove outline on focus */
+        }
+
+         .styles-section  .owl-stage{
+            margin-top: 48px
+        }
+
+
+
+/* ==========================================
+==============================================
+-============================================== */
+
+.servWtt_sec{
+    padding-top: 115px;
+    background: url("../images/cemSErv_wtt.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.mnnWt_brd{
+    width: 18%;
+    margin: auto;
+    position: relative;
+    bottom: 20px;
+    opacity: 0.5;
+}
+.mnnWt_brd::before{
+    content: "";
+    position: absolute;
+    width: 75%;
+    border-top: 1px solid #7a7a7a;
+    left: -235px;
+    top: 88px;
+}
+
+.mnnWt_brd::after{
+    content: "";
+    position: absolute;
+    width: 75%;
+    border-top: 1px solid #7a7a7a;
+    right: -235px;
+    top: 88px;
+}
+
+.servRowwWt{
+    background: url("../images/servSng_back.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: #000000a1;
+    background-blend-mode: overlay;
+}
+
+.servPrt_wtt{
+    padding: 20px;
+}
+.servPrt_img {
+    top: -95px;
+    width: 35%;
+    right: 90px;
+    padding: 15px;
+    background: url("../images/cemSErv_wtt.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.servPrt_img_flp{
+    left: 90px !important;
+}
+
+.servPrt_wtt h2{
+    color: white;
+    font-size: 42px;
+    /* If you want serifStylee here too, add it: */
+    /* font-family: serifStylee, serif; */
+}
+.servPrt_wtt p{
+    color: #c7c7c7;
+    font-size: 20px;
+    /* This will inherit from body (Raleway) unless specified */
+}
+
+.servPrt_wtt a{
+    border: 1px solid white;
+    display: block;
+    width: 35%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+    /* This will inherit from body (Raleway) unless specified */
+
+}
+
+.servPrt_wtt a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.servPrt_wtt a::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: white;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.servPrt_wtt a:hover{
+    color: black;
+}
+.servPrt_wtt a:hover::before{
+    width: 50%;
+}
+.servPrt_wtt a:hover::after{
+    width: 51%;
+}
+
+
+/***************** FAQ */
+
+.faqAcc_mn{
+    width: 80%;
+    margin: auto;
+}
+
+.faqAcc_mn .accordion-button{
+    background: #5d3538 !important;
+    padding: 0 !important;
+    width: 10%;
+    box-shadow: none;
+    border-radius: 0 !important;
+}
+.faqAcc_mn .accordion-button:not(.collapsed)::after{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: url(../images/arrtAcc_wtt.png );
+    background-size: 100%;
+}
+
+.faqAcc_mn .accordion-button.collapsed::after{
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%, 0) rotateX(180deg) !important;
+    background: url(../images/arrtAcc_wtt.png );
+    background-size: 100%;
+}
+
+.faqAcc_mn .accordion-item {
+    border:none;
+    margin-top:20px !important;
+}
+
+.faqAcc_mn .accordion-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+}
+
+.faqAcc_mn .accordion-header span{
+    display: block;
+    width: 87%;
+    padding: 20px;
+    background: black;
+    color: white;
+    font-size: 27px;
+     /* This will inherit from body (Raleway) unless specified  */
+}
+
+.faqAcc_mn .accordion{
+    --bs-accordion-btn-icon-width: 3.25rem !important;
+}
+
+.accordion-body{
+    width: 80%;
+    font-size:20px;
+     /* This will inherit from body (Raleway) unless specified  */
+}
+
+        
+        
+        
+/* Main container for dropdown */
+.listHOv_tatmain {
+  position: relative;
+}
+
+/* Dropdown list hidden by default */
+.listHOv_tatmain .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #4a4a4a;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    z-index: 1000;
+    overflow: hidden;
+    border-radius: 0;
+    border: 1px solid #959595;
+}
+
+/* Dropdown link style */
+.listHOv_tatmain .dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #eeeeee;
+  text-decoration: none;
+  /* white-space: nowrap; */
+}
+
+.listHOv_tatmain .dropdown-menu li a:hover {
+  /* background: #f2f2f2; */
+   color: white;
+       text-shadow: 0px 0px 10px #4e0000;
+}
+
+/* Show dropdown on hover */
+.listHOv_tatmain:hover .dropdown-menu {
+  display: block;
+}
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
