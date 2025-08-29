@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watcher</title>
+
+    
+        <!-- FONT CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"/>
+
+        <!-- bootstrap min css -->
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <!-- owl min css -->
+         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- owl theme default -->
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- <link rel="stylesheet" href="assets/css/responsive.css" /> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+<style>
+  
+</style>
+</head>
+<body>
+
+  
+ 
+        <!-- HEADER  -->
+    
+    <header class="position-absolute w-100 inChange_inner">
+  <section class="head_sec position-relative">
+    <div class="container">
+
+      <!-- Top Social Icons (Visible on md and up only) -->
+      <div class="top_divv d-none d-md-flex justify-content-end pt-4 mb-3">
+        <p>
+          <a href="https://www.facebook.com/people/Watcher-tattoo/61565470585359/"><i class="ri-facebook-fill"></i></a>
+          <a href="https://www.instagram.com/glasgowrealismtattoo/"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.pinterest.com/watchertattoo/"><i class="ri-pinterest-line"></i></a>
+          <a href="https://www.tiktok.com/@glasgowrealismtattoo"><i class="ri-tiktok-line"></i></a>
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navBar_mainn p-0">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+
+          <!-- Logo -->
+          <div class="LogoDiv d-flex align-items-center">
+            <a class="navbar-brand navLogoo" href="index.html">
+              <img src="assets/images/wtchTT_logo.png" alt="">
+            </a>
+          </div>
+
+          <!-- Toggle Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse nav1st_divMain" id="navbarNav">
+            <ul class="navbar-nav justify-content-center py-2 px-4 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+
+              <!-- Services with Hover Dropdown on Desktop -->
+              <li class="nav-item listHOv_tatmain position-relative">
+                <a class="nav-link" href="services.html">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a href="portraits.html">Portrait Work</a></li>
+                  <li><a href="coverups.html">Cover Ups / Rework</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+
+            <!-- Social Icons for Mobile Menu -->
+            <div class="mobile-social-icons d-lg-none text-center mt-3 pb-3">
+              <a href="https://www.facebook.com/people/Watcher-tattoo/61565470585359/" class="mx-2"><i class="ri-facebook-fill"></i></a>
+              <a href="https://www.instagram.com/glasgowrealismtattoo/" class="mx-2"><i class="ri-instagram-line"></i></a>
+              <a href="https://www.pinterest.com/watchertattoo/" class="mx-2"><i class="ri-pinterest-line"></i></a>
+              <a href="https://www.tiktok.com/@glasgowrealismtattoo" class="mx-2"><i class="ri-tiktok-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+</header>
+
+
+    
+
+        <!-- Cookie Consent Popup -->
+<div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-content">
+        <p>🍪 We use cookies to improve your experience. You can choose to accept or reject them. Read our 
+           <a href="/cookie-policy" target="_blank">Cookie Policy</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookie" class="accept-btn">Accept</button>
+            <button id="reject-cookie" class="reject-btn">Reject</button>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- BANNER  -->
+
+    <section class="banMain_out">
+
+
+
+<div class="bannWT_owwwll owl-carousel owl-theme">
+  <div class="item">
+    <div class="flip-inner">
+      <div class="bannMain_sec">
+        <div class="container">
+          <div class="bannMain_banHead">
+            <h1 class="animateBan-Lft">WATCHER</h1>
+            <p  class="animateBan-Rgt">TATTOO GLASGOW</p>
+            <a href="tel:+447481618727" >Book A Free Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="flip-inner">
+      <div class="bannMain_sec bannMain_sec_1">
+        <div class="container">
+          <div class="bannMain_banHead">
+            <h1 class="animateBan-Lft">BEST FOR YOU</h1>
+            <p  class="animateBan-Rgt">EXPERIENCE IT</p>
+            <a href=""  data-bs-toggle="modal" data-bs-target="#contactFormModal" data-service="Cover Ups / Rework">Book A Free Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    </section>
+
+
+    <!-- 2nd Sec  -->
+
+<section class="abt2nd_sec position-relative">
+    <div class="container">
+        <div class="row">
+
+            <!-- Left Image -->
+            <div class="col-lg-6 order-2 order-md-1">
+                <div class="abt2nd_1 pe-3 ">
+                    <div class="abttImg_1">
+                        <img src="assets/images/banbanWat_2.jpeg" class="w-100" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-lg-6 order-1 order-md-2">
+                <div class="abt2nd_2">
+                    <h2>ABOUT US</h2>
+
+                    <p>
+                        Angel’s journey into tattooing began at the age of 15, driven by a deep passion for art and self-expression. Despite a lack of local mentors or apprenticeship opportunities, his determination to learn never wavered. He recalls building a homemade tattoo machine from an old radio motor and a guitar string, practicing tirelessly on fruit and pig skin.
+                    </p>
+
+                    <p>
+                        In 2010, after saving up for his first professional tattoo kit, Angel tattooed his very first person—his mother, who has been a pillar of support since day one. 
+                    </p>
+
+                    
+
+                    <!-- Buttons -->
+                    <div class="abtWtt_btns d-flex gap-4 mt-2">
+                        <a href="about.html" class="abt1st_btn">Read More</a>
+                        <a href="" class="abt1st_btn" data-bs-toggle="modal" data-bs-target="#contactFormModal" data-service="Cover Ups / Rework">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Background Decorative Image -->
+    <div class="abttImg_2 position-absolute">
+        <img src="assets/images/abtMac_imgg.png" class="w-100" alt="">
+    </div>
+</section>
+
+
+<!-- 3rd Sec  -->
+
+<section class="weDo_sec text-center py-5">
+
+  <div class="container" >
+
+    <div class="wedo_head">
+    <h2>WHAT WE DO</h2>
+    <p>At Watcher Tattoo, we specialize in creating bold, unique, and lifelike tattoo designs. From black & grey and colour tattoos to portraits and cover-ups, our expert artists bring your vision to life with precision and creativity</p>
+    </div>
+
+ <div class="weDooo_owlll owl-carousel owl-theme">
+
+     
+
+        <div class="item p-2">
+          <div class="cardServv">
+            <div class="srIMgg"><img src="assets/images/coverup.jpeg" class="w-100" alt=""></div>
+            <div class="srvTyp_txxxtt">
+              <h5 class="frrblck">COVER UPS / Rework</h5>
+              <p class="frrblck">Turn unwanted tattoos into fresh masterpieces with expert cover-up techniques. Get a good work from us  feel confident</p>
+              <a href="coverups.html" class="weDoCard_btn">Read More</a>
+            </div>
+          </div>
+        </div>
+    <div class="item p-2">
+  <div class="cardServv">
+    <div class="srIMgg">
+      <img src="assets/images/pointingman.jpg" class="w-100" alt="Get a Free Quote">
+    </div>
+    <div class="srvTyp_txxxtt">
+  <h5 class="frrblck">Get a Free  Quote</h5>
+  <p class="frrblck">
+    Thinking about your next tattoo? Get a free, no-obligation quote today and let our expert artists bring your tattoo ideas to life!
+  </p>
+  <a href="get-a-quote.html" class="weDoCard_btn"   data-bs-toggle="modal" data-bs-target="#contactFormModal" data-service="Cover Ups / Rework">Book Now</a>
+</div>
+
+  </div>
+</div>
+
+
+        
+          <div class="item p-2">
+  <div class="cardServv">
+    <div class="srIMgg"><img src="assets/images/portrait.jpg" class="w-100" alt="Portrait Tattoo"></div>
+    <div class="srvTyp_txxxtt">
+      <h5 class="frrblck">Portrait Work</h5>
+      <p class="frrblck">Capture lifelike details and emotions with our expert portrait tattoos, crafted to perfection with precision and realism.</p>
+      <a href="portrait.html" class="weDoCard_btn">Read More</a>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+      </div>
+
+  </div>
+
+</section>
+
+<!-- 4th sec  -->
+
+<section class="worksWt_sec text-center py-5">
+
+<div class="container">
+
+    <div class="wrkWt_1 d-flex justify-content-between align-items-center">
+        <div class="wrkWt_1_hd"><h2>OUR WORKS</h2></div>
+        <div class="wrkWt_1_swch">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Black & Gray</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Colour</button>
+  </li>
+
+</ul>
+        </div>
+
+    </div>
+
+    <div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+  <div class="wrkWtt_2 mt-3" id="lightgallery">
+  <div class="row">
+    <div class="col-lg-5">
+      <div class="wrkWtt_imgg position-relative" id="wrkWtt_imgg_fst">
+        <a href="assets/images/tattooWT_3.jpg">
+          <img src="assets/images/tattooWT_3.jpg" class="w-100" alt="">
+        </a>
+        <span>Black & White</span>
+      </div>
+    </div>
+
+    <div class="col-lg-7">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="wrkWtt_imgg position-relative">
+            <a href="assets/images/watImggNW_13.jpg">
+              <img src="assets/images/watImggNW_13.jpg" class="w-100" alt="">
+            </a>
+            <span>Black & White</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="wrkWtt_imgg position-relative">
+            <a href="assets/images/tattooWT_7.jpg">
+              <img src="assets/images/tattooWT_7.jpg" class="w-100" alt="">
+            </a>
+            <span>Black & White</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="wrkWtt_imgg position-relative">
+            <a href="assets/images/watImggNW_6.jpg">
+              <img src="assets/images/watImggNW_6.jpg" class="w-100" alt="">
+            </a>
+            <span>Black & White</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-4">
+          <div class="wrkWtt_imgg position-relative">
+            <a href="assets/images/watImggNW_4.jpg">
+              <img src="assets/images/watImggNW_4.jpg" class="w-100" alt="">
+            </a>
+            <span>Black & White</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="wrkWtt_imgg position-relative">
+            <a href="assets/images/watImggNW_9.jpg">
+              <img src="assets/images/watImggNW_9.jpg" class="w-100" alt="">
+            </a>
+            <span>Black & White</span>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="wrkWtt_imgg position-relative">
+            <a href="assets/images/watImggNW_12.jpg">
+              <img src="assets/images/watImggNW_12.jpg" class="w-100" alt="">
+            </a>
+            <span>Black & White</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+<div class="wrkWtt_2 mt-3" id="lightgallery1">
+    <div class="row">
+        <div class="col-lg-5">
+            <div class="wrkWtt_imgg position-relative" id="wrkWtt_imgg_fst">
+                <a href="assets/images/colour.jpg" data-lightbox="tattoo-gallery" data-title="Full Body Tattoo">
+                    <img src="assets/images/colour.jpg" class="w-100" alt="">
+                </a>
+                <span>Colour</span>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="wrkWtt_imgg position-relative">
+                        <a href="assets/images/watImggNW_3.jpg" data-lightbox="tattoo-gallery" data-title="Poseidon">
+                            <img src="assets/images/watImggNW_3.jpg" class="w-100" alt="">
+                        </a>
+                        <span>Colour</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="wrkWtt_imgg position-relative">
+                        <a href="assets/images/watImggNW_8.jpg" data-lightbox="tattoo-gallery" data-title="Poseidon">
+                            <img src="assets/images/watImggNW_8.jpg" class="w-100" alt="">
+                        </a>
+                        <span>Colour</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="wrkWtt_imgg position-relative">
+                        <a href="assets/images/watImggNW_23.jpg" data-lightbox="tattoo-gallery" data-title="Poseidon">
+                            <img src="assets/images/watImggNW_23.jpg" class="w-100" alt="">
+                        </a>
+                        <span>Colour</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="wrkWtt_imgg position-relative">
+                        <a href="assets/images/watImggNW_10.png" data-lightbox="tattoo-gallery" data-title="Skull">
+                            <img src="assets/images/watImggNW_10.png" class="w-100" alt="">
+                        </a>
+                        <span>Colour</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="wrkWtt_imgg position-relative">
+                        <a href="assets/images/colour2.jpeg" data-lightbox="tattoo-gallery" data-title="DJ half sleeve">
+                            <img src="assets/images/colour2.jpeg" class="w-100" alt="">
+                        </a>
+                        <span>Colour</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="wrkWtt_imgg position-relative">
+                        <a href="assets/images/colorthree.jpg" data-lightbox="tattoo-gallery" data-title="Dog and a rose">
+                            <img src="assets/images/colorthree.jpg" class="w-100" alt="">
+                        </a>
+                        <span>Colour</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+  </div>
+  
+</div>
+
+</div>
+<div class="container d-flex justify-content-center" style="margin-top: 20px;">
+    <a href="gallery.html" class="abt1st_btn1">View All</a>
+</div>
+
+</section>
+
+<!---book now contact-->
+<!-- Contact Form Modal -->
+<div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered custom-modal">
+    <div class="modal-content custom-modal-content">
+
+      <div class="modal-body">
+        <div class="col-lg-12">
+          <div class="contact-form">
+              <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Full Name" required="">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Your Email Address" required="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="tel" class="form-control" placeholder="Phone Number" required="">
+                </div>
+                <div class="col-md-6">
+                  <select class="form-control service-type" required="">
+                  
+                       <option value="">Select Tattoo Size</option>
+                       <option value="small">Small (2-4 inches)</option>
+                       <option value="medium">Medium (4-8 inches)</option>
+                       <option value="large">Large (8+ inches)</option>
+                       <option value="sleeve">Full Sleeve</option>                 
+                                    
+                                  
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <select class="form-control service-name" required="">
+                  
+                   <option value="">Preferred Style</option>
+                    <option value="realistic">Realistic Portrait</option>
+                    <option value="traditional">Traditional American</option>
+                    <option value="japanese">Japanese Traditional</option>
+                    <option value="geometric">Geometric/Abstract</option>
+                    <option value="watercolor">Watercolor</option>
+                    <option value="blackwork">Blackwork/Dotwork</option>
+                    <option value="other">Other/Not Sure</option>
+                                    
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Preferred Placement (e.g., arm, back, leg)">
+                </div>
+              </div>
+              <textarea class="form-control" rows="6" placeholder="Describe your tattoo idea in detail. Include any reference images, themes, or specific elements you want included." required=""></textarea>
+              <button type="submit" class="submit-btn">Book My Consultation</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 5th Sec  -->
+
+<section class="testiWt_sec position-relative">
+
+    <div class="container">
+       <h2>TESTIMONIAL</h2>
+
+
+    <div class="testiWt_owlll owl-carousel owl-theme">
+
+    <div class="item">
+
+        
+        <div class="testiWt_main text-center mt-5">
+
+            <div class="testiWt_prof"><img src="assets/images/testiiProff_img.png" class="w-100" alt=""></div>
+            <h5>Kai Vaughn</h5>
+            <p>Angel is the best tattooist I have ever went to. At this point, I wouldn't go to anyone else. Take
+a look at the portfolio and see for yourself. I've recommended him to my friends and they
+couldn't be happier, too. His large pieces are so methodical, detailed and vibrant. Everything
+you would hope it would be.</p>
+
+              <span><img src="assets/images/testiStarr_wtt.png" class="w-100" alt=""></span>  
+
+        </div>
+
+
+        
+
+        
+
+
+    </div>
+    <div class="item">
+
+        
+        <div class="testiWt_main text-center mt-5">
+
+            <div class="testiWt_prof"><img src="assets/images/testiiProff_img.png" class="w-100" alt=""></div>
+            <h5>Shanley Smith
+</h5>
+            <p>Angel was super professional. First we met to go over ideas and designs. Then we met to try out a couple and see what I liked best. I liked that there was no rush or pressure and I got to sit with the ideas before deciding. The actual tattoo went flawlessly and has healed nicely, no scabbing or scar tissue. Overall very happy with my experience.</p>
+
+              <span><img src="assets/images/testiStarr_wtt.png" class="w-100" alt=""></span>  
+
+        </div>
+
+
+        
+
+        
+
+
+    </div>
+
+      <div class="item">
+
+        
+        <div class="testiWt_main text-center mt-5">
+
+            <div class="testiWt_prof"><img src="assets/images/testiiProff_img.png" class="w-100" alt=""></div>
+            <h5>Stefan Max
+</h5>
+            <p>Angel is an amazing artist with a great eye for tattoo placement and design. He takes the time to discuss your ideas with you and eventually comes up with a design that perfectly fits the body part you want tattooed.
+
+I got a complete arm sleeve over several days and he did not stop until he (and I) was satisfied with the result, and it exceeded my expectations</p>
+
+              <span><img src="assets/images/testiStarr_wtt.png" class="w-100" alt=""></span>  
+
+        </div>
+
+
+        
+
+        
+
+
+    </div>
+
+
+    <div class="item">
+
+        
+        <div class="testiWt_main text-center mt-5">
+
+            <div class="testiWt_prof"><img src="assets/images/testiiProff_img.png" class="w-100" alt=""></div>
+            <h5>Conor
+</h5>
+            <p>First met Angel in 2019 for a consultation on a sleeve. He was super professional and helpful.
+
+He created a beautiful tattoo for me. 5 sessions later and couldn't be happier.
+Great guy and an even better artist.</p>
+
+              <span><img src="assets/images/testiStarr_wtt.png" class="w-100" alt=""></span>  
+
+        </div>
+
+
+        
+
+        
+
+
+    </div>
+  
+    </div>
+
+<div class="container d-flex justify-content-center" style="margin-top: 20px;">
+    <a href="https://g.page/r/CWBruGgRqFiREBM/review" class="abt1st_btn">View All</a>
+</div>
+
+
+
+
+
+    </div>
+
+    <div class="testiMach_1 position-absolute"><img src="assets/images/testiMachine_1.png" class="w-100" alt=""></div>
+    <div class="testiMach_2 position-absolute"><img src="assets/images/testiMachine_2.png" class="w-100" alt=""></div>
+
+</section>
+
+
+
+
+<!-- FOOTER  -->
+
+<footer>
+    <section class="jusDsn_WTT"></section>
+
+    <section class="fottMain_div position-relative">
+        <div class="container">
+            <div class="ftLogo_imgg position-absolute"><img src="assets/images/footLogo_img.jpg" class="w-100" alt=""></div>
+            <h3>WATCHER TATTOO</h3>
+            <p class="ftMaion_txt">Watcher Tattoo is a leading tattoo studio in Glasgow, known for color realism tattoos, tattoo cover-ups, and custom designs. Our experienced professional tattoo artists ensure every piece is safe, creative, and unforgettable.</p>
+
+            <ul class="ftMain_menu mt-5">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+            <ul class="ftMain_menu mt-2">
+              <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                <li><a href="privacy-policy.html"> Privacy Policy</a></li>
+                
+            </ul>
+
+            <p class="iconFt d-flex justify-content-center mt-4">
+                <a href="https://www.facebook.com/people/Watcher-tattoo/61565470585359/"><i class="ri-facebook-fill"></i></a> 
+                <a href="https://www.instagram.com/glasgowrealismtattoo/"><i class="ri-instagram-line"></i></a> 
+               <a href="https://www.pinterest.com/watchertattoo/"><i class="ri-pinterest-line"></i></a>
+                <a href="https://www.tiktok.com/@glasgowrealismtattoo"><i class="ri-tiktok-line"></i></a>
+            </p>
+
+            <p class="ftLast_tx">© 2025 <strong>Watcher Tattoo</strong> | All Rights Reserved | Designed and developed by <a href="https://kyleinfotech.co.in/">Kyle Infotech</a></p>
+        </div>
+    </section>
+</footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+<script>
+  const wrapper = document.getElementById('lightgallery');
+
+  lightGallery(wrapper, {
+    selector: '.wrkWtt_imgg a', // gallery items
+    plugins: [lgZoom, lgThumbnail],
+    speed: 500,
+    download: false
+  });
+
+ const wrapper1 = document.getElementById('lightgallery1');
+
+lightGallery(wrapper1, {
+  selector: '.wrkWtt_imgg a',
+  plugins: [lgZoom, lgThumbnail],
+  speed: 500,
+  download: false
+});
+</script>
+
+
+<script>
+
+$('.weDooo_owlll').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+        autoplay:true,
+    autoplayTimeout:3000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+</script>
+
+<script>
+
+$('.bannWT_owwwll').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+     autoplay:true,
+    smartSpeed:1500,
+    animateOut: 'fadeOut',
+    // stagePadding:30,
+    smartSpeed:1500,
+     mouseDrag: false,     
+    touchDrag: false,
+    responsive: {
+        0: { items: 1 },
+        600: { items: 1 },
+        1000: { items: 1 }
+    },
+      onTranslated: function(event) {
+    $('.animateBan-Lft').removeClass('fadeInLeft'); // reset
+    var current = $('.owl-item.active').find('.animateBan-Lft');
+    current.addClass('fadeInLeft');
+  },
+  onTranslate: function(event) {
+    $('.animateBan-Lft').removeClass('fadeInLeft'); // remove animation before next starts
+  },
+  
+  onTranslate: function() {
+    $('.animateBan-Rgt').css({
+      opacity: 0,
+      transform: 'translateX(50px)'
+    });
+  },
+  onTranslated: function() {
+    $('.owl-item.active .animateBan-Rgt').css({
+      opacity: 1,
+      transform: 'translateX(0)'
+    });
+  }
+  
+});
+
+
+</script>
+
+
+
+<script>
+
+$('.testiWt_owlll').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+
+</script>
+
+<script>
+  // span theke caption niye <a> te data-sub-html set
+  document.querySelectorAll('#lightgallery .wrkWtt_imgg').forEach(card => {
+    const a = card.querySelector('a');
+    const span = card.querySelector('span');
+    if (a && span) {
+      const title = span.textContent.trim();
+      a.setAttribute('data-sub-html', `<h4>${title}</h4>`);
+    }
+  });
+
+  document.querySelectorAll('#lightgallery1 .wrkWtt_imgg').forEach(card => {
+    const a = card.querySelector('a');
+    const span = card.querySelector('span');
+    if (a && span) {
+      const title = span.textContent.trim();
+      a.setAttribute('data-sub-html', `<h4>${title}</h4>`);
+    }
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const cookiePopup = document.getElementById("cookie-popup");
+    const acceptBtn = document.getElementById("accept-cookie");
+    const rejectBtn = document.getElementById("reject-cookie");
+
+    // Show popup if user hasn't made a choice
+    if (!localStorage.getItem("cookieChoice")) {
+        setTimeout(() => {
+            cookiePopup.style.display = "block";
+        }, 1000);
+    }
+
+    // When Accept is clicked
+    acceptBtn.addEventListener("click", () => {
+        localStorage.setItem("cookieChoice", "accepted");
+        cookiePopup.style.display = "none";
+    });
+
+    // When Reject is clicked
+    rejectBtn.addEventListener("click", () => {
+        localStorage.setItem("cookieChoice", "rejected");
+        cookiePopup.style.display = "none";
+    });
+});
+</script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
